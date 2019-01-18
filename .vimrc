@@ -102,6 +102,8 @@ inoremap <C-U> <C-G>u<C-U>
 if &t_Co > 2 || has("gui_running")
   " Revert with ":syntax off".
   syntax on
+  set showtabline=2   " Show the tabline at all times
+  highlight TabLineSel ctermbg=1 ctermfg=4   " Highlight selected tab in tabline
 
   " I like highlighting strings inside C comments.
   " Revert with ":unlet c_comment_strings".
